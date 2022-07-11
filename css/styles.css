@@ -6,7 +6,11 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Epilogue", sans-serif; }
+  font-family: "Epilogue", sans-serif;
+  color: dimgray; }
+
+h1 {
+  color: #141414; }
 
 menu {
   padding: 1rem;
@@ -26,5 +30,14 @@ menu {
   display: block;
   width: auto;
   max-width: 100%; }
+
+.heading {
+  padding: 2rem 1rem;
+  text-align: center; }
+  .heading-title {
+    margin-bottom: 1rem; }
+  .heading-text {
+    font-size: 0.95rem;
+    margin-bottom: 1rem; }
 
 /*# sourceMappingURL=styles.css.map */
