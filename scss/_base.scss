@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+$bg-color: hsl(0, 0%, 98%);
+$medium-gray: hsl(0, 0%, 41%);
+$dark-gray: hsl(0, 0%, 8%);
+$body-font: "Epilogue", sans-serif;
+
+body {
+	font-family: $body-font;
+}
