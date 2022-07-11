@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Epilogue", sans-serif; }
+
+menu nav {
+  display: none; }
+menu .hamburguer-menu span {
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin: 6px 0;
+  background-color: #141414; }
+
+/*# sourceMappingURL=styles.css.map */
