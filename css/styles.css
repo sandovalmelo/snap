@@ -12,6 +12,18 @@ body {
 h1 {
   color: #141414; }
 
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px; }
+
+.learn-more-btn {
+  background-color: #141414;
+  color: #fafafa; }
+
 menu {
   padding: 1rem;
   display: flex;

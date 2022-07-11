@@ -19,3 +19,17 @@ body {
 h1 {
 	color: $dark-gray;
 }
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 0.85rem 1.25rem;
+	border-radius: 12px;
+}
+
+.learn-more-btn {
+	background-color: $dark-gray;
+	color: $bg-color;
+}
