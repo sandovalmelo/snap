@@ -1,7 +1,19 @@
 .hero-image {
 	img {
 		display: block;
-		width: auto;
-		max-width: 100%;
+		width: 100%;
+	}
+}
+
+@media (min-width: 1281px) {
+	.hero-image {
+		grid-column: 2 / -1;
+		grid-row: 1 / 2;
+
+		img {
+			width: auto;
+			max-width: 100%;
+			height: calc(100vh - 97px);
+		}
 	}
 }

@@ -11,3 +11,10 @@
 		margin-bottom: 1rem;
 	}
 }
+
+@media (min-width: 1281px) {
+	.heading {
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
+}
