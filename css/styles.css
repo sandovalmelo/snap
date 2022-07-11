@@ -22,4 +22,9 @@ menu {
     margin: 6px 0;
     background-color: #141414; }
 
+.hero-image img {
+  display: block;
+  width: auto;
+  max-width: 100%; }
+
 /*# sourceMappingURL=styles.css.map */
