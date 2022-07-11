@@ -22,5 +22,25 @@ menu {
 @media (min-width: 1281px) {
 	menu {
 		padding: 2rem;
+		justify-content: stretch;
+
+		nav {
+			margin-left: 4rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex: 1;
+
+			ul {
+				display: flex;
+				li {
+					margin: 0 1rem;
+				}
+			}
+		}
+
+		.hamburguer-menu {
+			display: none;
+		}
 	}
 }

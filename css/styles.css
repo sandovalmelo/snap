@@ -15,6 +15,9 @@ h1 {
 p {
   line-height: 1.5; }
 
+li {
+  list-style: none; }
+
 .btn {
   border: none;
   font-family: inherit;
@@ -43,7 +46,20 @@ menu {
 
 @media (min-width: 1281px) {
   menu {
-    padding: 2rem; } }
+    padding: 2rem;
+    justify-content: stretch; }
+    menu nav {
+      margin-left: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1; }
+      menu nav ul {
+        display: flex; }
+        menu nav ul li {
+          margin: 0 1rem; }
+    menu .hamburguer-menu {
+      display: none; } }
 @media (min-width: 1281px) {
   main {
     max-width: 1280px;
