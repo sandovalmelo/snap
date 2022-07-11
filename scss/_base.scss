@@ -20,12 +20,16 @@ h1 {
 	color: $dark-gray;
 }
 
+p {
+	line-height: 1.5;
+}
+
 .btn {
 	border: none;
 	font-family: inherit;
 	font-size: 1rem;
 	font-weight: 500;
-	padding: 0.85rem 1.25rem;
+	padding: 0.95rem 1.45rem;
 	border-radius: 12px;
 }
 

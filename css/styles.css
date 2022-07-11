@@ -12,12 +12,15 @@ body {
 h1 {
   color: #141414; }
 
+p {
+  line-height: 1.5; }
+
 .btn {
   border: none;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.85rem 1.25rem;
+  padding: 0.95rem 1.45rem;
   border-radius: 12px; }
 
 .learn-more-btn {
@@ -48,7 +51,7 @@ menu {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 4rem;
     justify-items: end;
     align-items: end; } }
 .hero-image img {
@@ -75,7 +78,17 @@ menu {
 @media (min-width: 1281px) {
   .heading {
     grid-column: 1 / 2;
-    grid-row: 1 / 2; } }
+    grid-row: 1 / 2;
+    text-align: left; }
+    .heading-title {
+      font-size: 5rem;
+      margin-bottom: 2rem; }
+      .heading-title span {
+        display: block; }
+    .heading-text {
+      margin-bottom: 4rem;
+      font-size: 1.15rem;
+      max-width: 480px; } }
 .clients {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -84,5 +97,10 @@ menu {
   margin-top: 2rem; }
   .clients img {
     width: 100%; }
+
+@media (min-width: 1281px) {
+  .clients {
+    margin-top: 6rem;
+    gap: 2rem; } }
 
 /*# sourceMappingURL=styles.css.map */
