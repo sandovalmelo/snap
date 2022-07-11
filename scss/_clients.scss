@@ -1,0 +1,12 @@
+.clients {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+	align-items: center;
+	margin-top: 2rem;
+
+	img {
+		width: auto;
+		max-width: 100%;
+	}
+}

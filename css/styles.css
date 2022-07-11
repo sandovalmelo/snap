@@ -52,4 +52,14 @@ menu {
     font-size: 0.95rem;
     margin-bottom: 1rem; }
 
+.clients {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem; }
+  .clients img {
+    width: auto;
+    max-width: 100%; }
+
 /*# sourceMappingURL=styles.css.map */
