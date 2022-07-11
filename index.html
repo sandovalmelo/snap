@@ -9,25 +9,37 @@
 </head>
 
 <body>
+  <menu>
+    <img src="./images/logo.svg" alt="Logos" class="logo">
+    <nav>
+      <ul>
+        <li>Features</li>
+        <li>Company</li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+
+      <div class="login">
+        <button class="login-btn btn">Login</button>
+        <button class="register-btn btn">Register</button>
+      </div>
+    </nav>
+  </menu>
+
   <main>
-    <menu>
-      <nav></nav>
-    </menu>
+    <div class="heading">
+      <h1 class="heading-title">Make remote work</h1>
+      <p class="heading-text">Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.</p>
+      <button class="btn">Learn more</button>
+    </div>
+
+    <picture class="hero-image">
+      <source media="(max-width: 567px)" srcset="./images/image-hero-mobile.png">
+      <source media="(min-width: 568px) and (orientation: landscape)" srcset="./images/image-hero-desktop.png">
+      <img src="./images/image-hero-mobile.png" alt="Hero Image">
+    </picture>
   </main>
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes,
-  create team rituals, and watch productivity soar.
-
-  Learn more
 </body>
 
 </html>
