@@ -37,12 +37,8 @@ menu {
   justify-content: space-between; }
   menu nav {
     display: none; }
-  menu .hamburguer-menu span {
-    display: block;
-    width: 35px;
-    height: 3px;
-    margin: 6px 0;
-    background-color: #141414; }
+  menu .hamburguer-menu {
+    display: block; }
 
 @media (min-width: 1281px) {
   menu {
