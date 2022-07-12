@@ -40,18 +40,20 @@ menu {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  menu nav {
+    display: none; }
   menu .hamburguer-menu {
     display: block; }
 
 @media (max-width: 1280px) {
-  menu .overlay {
+  menu[data-open="true"] .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(20, 20, 20, 0.7); }
-  menu nav {
+  menu[data-open="true"] nav {
     background-color: #fafafa;
     display: block;
     position: absolute;
@@ -61,18 +63,18 @@ menu {
     padding: 5rem 1rem;
     width: 100%;
     max-width: 240px; }
-    menu nav li {
+    menu[data-open="true"] nav li {
       margin: 1rem 0; }
-    menu nav::after {
+    menu[data-open="true"] nav::after {
       content: "";
       display: block;
       width: 100px;
       height: 100px; }
-  menu .login {
+  menu[data-open="true"] .login {
     margin-top: 2rem;
     display: flex;
     flex-direction: column; }
-  menu .hamburguer-menu {
+  menu[data-open="true"] .hamburguer-menu {
     position: absolute;
     top: 1rem;
     right: 1rem; } }

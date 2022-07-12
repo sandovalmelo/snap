@@ -4,13 +4,17 @@ menu {
 	align-items: center;
 	justify-content: space-between;
 
+	nav {
+		display: none;
+	}
+
 	.hamburguer-menu {
 		display: block;
 	}
 }
 
 @media (max-width: 1280px) {
-	menu {
+	menu[data-open="true"] {
 		.overlay {
 			position: absolute;
 			top: 0;
