@@ -24,7 +24,12 @@ li {
   font-size: 1rem;
   font-weight: 500;
   padding: 0.95rem 1.45rem;
-  border-radius: 12px; }
+  border-radius: 12px;
+  background-color: transparent;
+  color: inherit; }
+
+.register-btn {
+  border: solid 2px dimgray; }
 
 .learn-more-btn {
   background-color: #141414;
@@ -59,7 +64,7 @@ menu {
 @media (min-width: 1281px) {
   main {
     max-width: 1280px;
-    min-height: calc(100vh - 97px);
+    min-height: calc(100vh - 112px);
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
