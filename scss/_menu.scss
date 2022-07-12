@@ -11,15 +11,13 @@ menu {
 
 @media (max-width: 1280px) {
 	menu {
-		position: absolute;
-		height: 100vh;
-		width: 100%;
-		background-color: $overlay-bg;
-
-		.logo {
+		.overlay {
 			position: absolute;
-			top: 1rem;
-			left: 1rem;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: $overlay-bg;
 		}
 
 		nav {
