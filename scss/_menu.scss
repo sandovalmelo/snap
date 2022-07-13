@@ -1,88 +1,136 @@
+// menu {
+// 	padding: 1rem;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: space-between;
+
+// 	nav {
+// 		display: none;
+// 	}
+
+// 	.hamburguer-menu {
+// 		display: block;
+// 	}
+// }
+
+// @media (max-width: 1280px) {
+// 	menu[data-open="true"] {
+// 		.overlay {
+// 			position: absolute;
+// 			top: 0;
+// 			left: 0;
+// 			right: 0;
+// 			bottom: 0;
+// 			background-color: $overlay-bg;
+// 		}
+
+// 		nav {
+// 			background-color: $bg-color;
+// 			display: block;
+// 			position: absolute;
+// 			top: 0;
+// 			right: 0;
+// 			bottom: 0;
+// 			padding: 5rem 1rem;
+// 			width: 100%;
+// 			max-width: 240px;
+
+// 			li {
+// 				margin: 1rem 0;
+// 			}
+
+// 			&::after {
+// 				content: "";
+// 				display: block;
+// 				width: 100px;
+// 				height: 100px;
+// 			}
+// 		}
+
+// 		.login {
+// 			margin-top: 2rem;
+// 			display: flex;
+// 			flex-direction: column;
+// 		}
+
+// 		.hamburguer-menu {
+// 			position: absolute;
+// 			top: 1rem;
+// 			right: 1rem;
+// 		}
+// 	}
+// }
+
+// @media (min-width: 1281px) {
+// 	menu {
+// 		padding: 2rem;
+// 		justify-content: stretch;
+
+// 		nav {
+// 			margin-left: 4rem;
+// 			display: flex;
+// 			align-items: center;
+// 			justify-content: space-between;
+
+// 			ul {
+// 				display: flex;
+// 				li {
+// 					margin: 0 1rem;
+// 				}
+// 			}
+// 		}
+
+// 		.hamburguer-menu {
+// 			display: none;
+// 		}
+// 	}
+// }
+
 menu {
 	padding: 1rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 
-	nav {
+	.overlay {
 		display: none;
-	}
-
-	.hamburguer-menu {
-		display: block;
 	}
 }
 
-@media (max-width: 1280px) {
-	menu[data-open="true"] {
-		.overlay {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: $overlay-bg;
-		}
+menu[data-open="true"] {
+	.overlay {
+		display: flex;
+		position: absolute;
+		flex-direction: column;
+		align-items: flex-end;
+		background-color: $overlay-bg;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 100%;
 
 		nav {
 			background-color: $bg-color;
-			display: block;
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			padding: 5rem 1rem;
-			width: 100%;
-			max-width: 240px;
+			height: 100%;
+			max-width: 65%;
+			padding: 4rem 1rem;
+		}
 
+		ul {
 			li {
 				margin: 1rem 0;
 			}
-
-			&::after {
-				content: "";
-				display: block;
-				width: 100px;
-				height: 100px;
-			}
 		}
 
-		.login {
-			margin-top: 2rem;
-			display: flex;
-			flex-direction: column;
+		button {
+			width: 100%;
 		}
 
-		.hamburguer-menu {
+		.close-menu {
 			position: absolute;
 			top: 1rem;
 			right: 1rem;
-		}
-	}
-}
-
-@media (min-width: 1281px) {
-	menu {
-		padding: 2rem;
-		justify-content: stretch;
-
-		nav {
-			margin-left: 4rem;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			flex: 1;
-
-			ul {
-				display: flex;
-				li {
-					margin: 0 1rem;
-				}
-			}
-		}
-
-		.hamburguer-menu {
-			display: none;
 		}
 	}
 }

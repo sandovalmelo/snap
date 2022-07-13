@@ -40,64 +40,37 @@ menu {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  menu nav {
+  menu .overlay {
     display: none; }
-  menu .hamburguer-menu {
-    display: block; }
 
-@media (max-width: 1280px) {
-  menu[data-open="true"] .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(20, 20, 20, 0.7); }
-  menu[data-open="true"] nav {
+menu[data-open="true"] .overlay {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: rgba(20, 20, 20, 0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%; }
+  menu[data-open="true"] .overlay nav {
     background-color: #fafafa;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    padding: 5rem 1rem;
-    width: 100%;
-    max-width: 240px; }
-    menu[data-open="true"] nav li {
-      margin: 1rem 0; }
-    menu[data-open="true"] nav::after {
-      content: "";
-      display: block;
-      width: 100px;
-      height: 100px; }
-  menu[data-open="true"] .login {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column; }
-  menu[data-open="true"] .hamburguer-menu {
+    height: 100%;
+    max-width: 65%;
+    padding: 4rem 1rem; }
+  menu[data-open="true"] .overlay ul li {
+    margin: 1rem 0; }
+  menu[data-open="true"] .overlay button {
+    width: 100%; }
+  menu[data-open="true"] .overlay .close-menu {
     position: absolute;
     top: 1rem;
-    right: 1rem; } }
-@media (min-width: 1281px) {
-  menu {
-    padding: 2rem;
-    justify-content: stretch; }
-    menu nav {
-      margin-left: 4rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex: 1; }
-      menu nav ul {
-        display: flex; }
-        menu nav ul li {
-          margin: 0 1rem; }
-    menu .hamburguer-menu {
-      display: none; } }
+    right: 1rem; }
+
 @media (min-width: 1281px) {
   main {
     max-width: 1280px;
-    min-height: calc(100vh - 112px);
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
