@@ -94,9 +94,11 @@ menu {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
     justify-items: end;
-    align-items: end; } }
+    align-items: center; } }
+@media (min-width: 1537px) {
+  main {
+    max-width: 90%; } }
 .hero-image img {
   display: block;
   width: 100%; }
@@ -108,7 +110,9 @@ menu {
     .hero-image img {
       width: auto;
       max-width: 100%;
-      height: calc(100vh - 97px); } }
+      height: calc(100vh - 99.2px);
+      object-fit: contain;
+      object-position: center; } }
 .heading {
   padding: 2rem 1rem;
   text-align: center; }
@@ -122,7 +126,8 @@ menu {
   .heading {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    text-align: left; }
+    text-align: left;
+    justify-self: start; }
     .heading-title {
       font-size: 5rem;
       margin-bottom: 2rem; }

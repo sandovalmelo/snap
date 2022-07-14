@@ -5,7 +5,7 @@ const main = document.querySelector("main");
 
 hamburguerMenu.addEventListener("click", (event) => {
 	menu.setAttribute("data-open", "true");
-	main.style.height = "calc(100vh - 60px)";
+	main.style.height = "calc(100vh - 59px)";
 	main.style.overflow = "hidden";
 });
 

@@ -4,8 +4,13 @@
 		margin: 0 auto;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 4rem;
 		justify-items: end;
-		align-items: end;
+		align-items: center;
+	}
+}
+
+@media (min-width: 1537px) {
+	main {
+		max-width: 90%;
 	}
 }

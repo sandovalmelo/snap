@@ -13,7 +13,9 @@
 		img {
 			width: auto;
 			max-width: 100%;
-			height: calc(100vh - 97px);
+			height: calc(100vh - 99.2px);
+			object-fit: contain;
+			object-position: center;
 		}
 	}
 }

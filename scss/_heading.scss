@@ -17,6 +17,7 @@
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 		text-align: left;
+		justify-self: start;
 
 		&-title {
 			font-size: 5rem;
