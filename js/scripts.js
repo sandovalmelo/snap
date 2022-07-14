@@ -5,10 +5,12 @@ const main = document.querySelector("main");
 
 hamburguerMenu.addEventListener("click", (event) => {
 	menu.setAttribute("data-open", "true");
-	// document.body.style.overflow = "hidden";
+	main.style.height = "calc(100vh - 60px)";
+	main.style.overflow = "hidden";
 });
 
 closeMenu.addEventListener("click", (event) => {
 	menu.setAttribute("data-open", "false");
-	// document.body.style.overflow = "auto";
+	main.style.height = "auto";
+	main.style.overflow = "auto";
 });
