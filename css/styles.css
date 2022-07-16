@@ -61,7 +61,7 @@ menu {
       width: 100%;
       max-width: 65%;
       padding: 4rem 1rem; }
-    menu[data-open="true"] .overlay ul li {
+    menu[data-open="true"] .overlay .nav-list li {
       margin: 1rem 0; }
     menu[data-open="true"] .overlay button {
       width: 100%; }
@@ -80,26 +80,26 @@ menu {
       display: flex;
       align-items: center;
       justify-content: space-between; }
-    menu ul {
+    menu .nav-list {
       margin-right: auto;
       display: flex; }
-      menu ul li {
+      menu .nav-list li {
         margin: 0 1.5rem; }
     menu .hamburguer-menu,
     menu .close-menu {
       display: none; }
+    menu .submenu {
+      padding: 1rem;
+      position: absolute;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 2px 20px -4px rgba(0, 0, 0, 0.4);
+      width: auto; }
     menu .features {
       position: relative; }
       menu .features-list {
-        padding: 1rem;
-        position: absolute;
-        border-radius: 8px;
-        background-color: #fff;
-        box-shadow: 0 2px 20px -4px rgba(0, 0, 0, 0.4);
         top: 36px;
-        right: 0;
-        display: flex;
-        flex-direction: column; }
+        right: 0; }
         menu .features-list li {
           margin: 0;
           display: flex;
@@ -109,7 +109,16 @@ menu {
             display: flex;
             justify-content: center;
             width: 18px;
-            height: 18px; } }
+            height: 18px; }
+    menu .company {
+      position: relative; }
+      menu .company-list {
+        top: 36px; }
+        menu .company-list li {
+          padding: 0.5rem;
+          margin: 0;
+          width: 100%;
+          width: 90px; } }
 @media (min-width: 1281px) {
   main {
     max-width: 1280px;
