@@ -72,6 +72,11 @@ menu {
 
 			li {
 				margin: 0 1.5rem;
+				cursor: pointer;
+
+				&:hover {
+					color: $dark-gray;
+				}
 			}
 		}
 
@@ -87,6 +92,7 @@ menu {
 			background-color: #fff;
 			box-shadow: 0 2px 20px -4px rgba(0, 0, 0, 0.4);
 			width: auto;
+			display: none;
 		}
 
 		.features {

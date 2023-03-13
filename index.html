@@ -1,110 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Snap</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>Snap</title>
-</head>
+	<body>
+		<menu data-open="false">
+			<img src="./images/logo.svg" alt="Logos" class="logo" />
+			<div class="overlay">
+				<nav>
+					<ul class="nav-list">
+						<li class="features">
+							Features
+							<img src="./images/icon-arrow-down.svg" alt="Arrow Down Icon" />
+							<ul class="features-list submenu">
+								<li>
+									<div class="icon">
+										<img src="./images/icon-todo.svg" alt="Todo Icon" />
+									</div>
+									Todo List
+								</li>
+								<li>
+									<div class="icon">
+										<img src="./images/icon-calendar.svg" alt="Calendar Icon" />
+									</div>
+									Calendar
+								</li>
+								<li>
+									<div class="icon">
+										<img
+											src="./images/icon-reminders.svg"
+											alt="Reminders Icon"
+										/>
+									</div>
+									Reminders
+								</li>
+								<li>
+									<div class="icon">
+										<img src="./images/icon-planning.svg" alt="Planning Icon" />
+									</div>
+									Planning
+								</li>
+							</ul>
+						</li>
+						<li class="company">
+							Company
+							<img src="./images/icon-arrow-down.svg" alt="Arrow Down Icon" />
+							<ul class="company-list submenu">
+								<li>History</li>
+								<li>Our Team</li>
+								<li>Blog</li>
+							</ul>
+						</li>
+						<li>Careers</li>
+						<li>About</li>
+					</ul>
 
-<body>
-  <menu data-open="false">
-    <img src="./images/logo.svg" alt="Logos" class="logo">
-    <div class="overlay">
-      <nav>
-        <ul class="nav-list">
-          <li class="features">
-            Features
-            <ul class="features-list submenu">
-              <li>
-                <div class="icon">
-                  <img src="./images/icon-todo.svg" alt="Todo Icon">
-                </div>
-                Todo List
-              </li>
-              <li>
-                <div class="icon">
-                  <img src="./images/icon-calendar.svg" alt="Calendar Icon">
-                </div>
-                Calendar
-              </li>
-              <li>
-                <div class="icon">
-                  <img src="./images/icon-reminders.svg" alt="Reminders Icon">
-                </div>
-                Reminders
-              </li>
-              <li>
-                <div class="icon">
-                  <img src="./images/icon-planning.svg" alt="Planning Icon">
-                </div>
-                Planning
-              </li>
-            </ul>
-          </li>
-          <li class="company">
-            Company
-            <ul class="company-list submenu">
-              <li>History</li>
-              <li>Our Team</li>
-              <li>Blog</li>
-            </ul>
-          </li>
-          <li>Careers</li>
-          <li>About</li>
-        </ul>
+					<div class="login">
+						<button class="login-btn btn">Login</button>
+						<button class="register-btn btn">Register</button>
+					</div>
 
-        <div class="login">
-          <button class="login-btn btn">Login</button>
-          <button class="register-btn btn">Register</button>
-        </div>
+					<div class="close-menu">
+						<img
+							src="./images/icon-close-menu.svg"
+							class="close-icon"
+							alt="Close Menu"
+						/>
+					</div>
+				</nav>
+			</div>
 
-        <div class="close-menu">
-          <img src="./images/icon-close-menu.svg" class="close-icon" alt="Close Menu">
-        </div>
-      </nav>
-    </div>
+			<div class="hamburguer-menu">
+				<img src="./images/icon-menu.svg" class="menu-icon" alt="Menu Icon" />
+			</div>
+		</menu>
 
-    <div class="hamburguer-menu">
-      <img src="./images/icon-menu.svg" class="menu-icon" alt="Menu Icon">
-    </div>
-  </menu>
+		<main>
+			<picture class="hero-image">
+				<source
+					media="(max-width: 567px)"
+					srcset="./images/image-hero-mobile.png"
+				/>
+				<source
+					media="(min-width: 568px) and (orientation: landscape)"
+					srcset="./images/image-hero-desktop.png"
+				/>
+				<img src="./images/image-hero-mobile.png" alt="Hero Image" />
+			</picture>
 
-  <main>
-    <picture class="hero-image">
-      <source media="(max-width: 567px)" srcset="./images/image-hero-mobile.png">
-      <source media="(min-width: 568px) and (orientation: landscape)" srcset="./images/image-hero-desktop.png">
-      <img src="./images/image-hero-mobile.png" alt="Hero Image">
-    </picture>
+			<div class="heading">
+				<h1 class="heading-title"><span>Make</span> remote work</h1>
+				<p class="heading-text">
+					Get your team in sync, no matter your location. Streamline processes,
+					create team rituals, and watch productivity soar.
+				</p>
+				<button class="learn-more-btn btn">Learn more</button>
 
-    <div class="heading">
-      <h1 class="heading-title"><span>Make</span> remote work</h1>
-      <p class="heading-text">Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.</p>
-      <button class="learn-more-btn btn">Learn more</button>
-
-      <div class="clients">
-        <div class="clients-item">
-          <img src="./images/client-databiz.svg" alt="Databiz Logo">
-        </div>
-        <div class="clients-item">
-          <img src="./images/client-audiophile.svg" alt="Audiophile Logo">
-        </div>
-        <div class="clients-item">
-          <img src="./images/client-meet.svg" alt="Meet Logo">
-        </div>
-        <div class="clients-item">
-          <img src="./images/client-maker.svg" alt="Maker Logo">
-        </div>
-      </div>
-    </div>
-  </main>
-  <script src="./js/scripts.js"></script>
-</body>
-
+				<div class="clients">
+					<div class="clients-item">
+						<img src="./images/client-databiz.svg" alt="Databiz Logo" />
+					</div>
+					<div class="clients-item">
+						<img src="./images/client-audiophile.svg" alt="Audiophile Logo" />
+					</div>
+					<div class="clients-item">
+						<img src="./images/client-meet.svg" alt="Meet Logo" />
+					</div>
+					<div class="clients-item">
+						<img src="./images/client-maker.svg" alt="Maker Logo" />
+					</div>
+				</div>
+			</div>
+		</main>
+		<script src="./js/scripts.js"></script>
+	</body>
 </html>

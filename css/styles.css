@@ -84,7 +84,10 @@ menu {
       margin-right: auto;
       display: flex; }
       menu .nav-list li {
-        margin: 0 1.5rem; }
+        margin: 0 1.5rem;
+        cursor: pointer; }
+        menu .nav-list li:hover {
+          color: #141414; }
     menu .hamburguer-menu,
     menu .close-menu {
       display: none; }
@@ -94,7 +97,8 @@ menu {
       border-radius: 8px;
       background-color: #fff;
       box-shadow: 0 2px 20px -4px rgba(0, 0, 0, 0.4);
-      width: auto; }
+      width: auto;
+      display: none; }
     menu .features {
       position: relative; }
       menu .features-list {
