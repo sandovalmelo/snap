@@ -8,7 +8,15 @@ menu {
 		display: none;
 	}
 
+	.nav-list {
+		img {
+			margin-left: 0.75rem;
+		}
+	}
+
 	.features-list {
+		display: none;
+
 		li {
 			display: flex;
 
@@ -20,6 +28,18 @@ menu {
 				height: 18px;
 			}
 		}
+	}
+
+	.features-list.active {
+		display: block;
+	}
+
+	.company-list {
+		display: none;
+	}
+
+	.company-list.active {
+		display: block;
 	}
 }
 
@@ -47,7 +67,7 @@ menu {
 
 			.nav-list {
 				li {
-					margin: 1rem 0;
+					margin: 1.25rem 0;
 				}
 			}
 
@@ -62,7 +82,7 @@ menu {
 			}
 
 			.submenu {
-				padding: 1.25rem;
+				padding: 0.5rem 1.25rem;
 			}
 		}
 	}

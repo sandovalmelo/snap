@@ -42,14 +42,24 @@ menu {
   justify-content: space-between; }
   menu .overlay {
     display: none; }
-  menu .features-list li {
-    display: flex; }
-    menu .features-list li .icon {
-      margin-right: 1rem;
-      display: flex;
-      justify-content: center;
-      width: 18px;
-      height: 18px; }
+  menu .nav-list img {
+    margin-left: 0.75rem; }
+  menu .features-list {
+    display: none; }
+    menu .features-list li {
+      display: flex; }
+      menu .features-list li .icon {
+        margin-right: 1rem;
+        display: flex;
+        justify-content: center;
+        width: 18px;
+        height: 18px; }
+  menu .features-list.active {
+    display: block; }
+  menu .company-list {
+    display: none; }
+  menu .company-list.active {
+    display: block; }
 
 @media (max-width: 1280px) {
   menu[data-open="true"] .overlay {
@@ -70,7 +80,7 @@ menu {
       max-width: 65%;
       padding: 4rem 1rem; }
     menu[data-open="true"] .overlay .nav-list li {
-      margin: 1rem 0; }
+      margin: 1.25rem 0; }
     menu[data-open="true"] .overlay button {
       width: 100%; }
     menu[data-open="true"] .overlay .close-menu {
@@ -78,7 +88,7 @@ menu {
       top: 1rem;
       right: 1rem; }
     menu[data-open="true"] .overlay .submenu {
-      padding: 1.25rem; } }
+      padding: 0.5rem 1.25rem; } }
 @media (min-width: 1280px) {
   menu {
     padding: 1.5rem 3rem; }
