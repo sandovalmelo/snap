@@ -42,6 +42,14 @@ menu {
   justify-content: space-between; }
   menu .overlay {
     display: none; }
+  menu .features-list li {
+    display: flex; }
+    menu .features-list li .icon {
+      margin-right: 1rem;
+      display: flex;
+      justify-content: center;
+      width: 18px;
+      height: 18px; }
 
 @media (max-width: 1280px) {
   menu[data-open="true"] .overlay {
@@ -68,7 +76,9 @@ menu {
     menu[data-open="true"] .overlay .close-menu {
       position: absolute;
       top: 1rem;
-      right: 1rem; } }
+      right: 1rem; }
+    menu[data-open="true"] .overlay .submenu {
+      padding: 1.25rem; } }
 @media (min-width: 1280px) {
   menu {
     padding: 1.5rem 3rem; }
@@ -97,8 +107,7 @@ menu {
       border-radius: 8px;
       background-color: #fff;
       box-shadow: 0 2px 20px -4px rgba(0, 0, 0, 0.4);
-      width: auto;
-      display: none; }
+      width: auto; }
     menu .features {
       position: relative; }
       menu .features-list {
@@ -106,14 +115,7 @@ menu {
         right: 0; }
         menu .features-list li {
           margin: 0;
-          display: flex;
           padding: 0.5rem 0; }
-          menu .features-list li .icon {
-            margin-right: 1rem;
-            display: flex;
-            justify-content: center;
-            width: 18px;
-            height: 18px; }
     menu .company {
       position: relative; }
       menu .company-list {

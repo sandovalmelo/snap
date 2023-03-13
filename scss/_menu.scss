@@ -7,6 +7,20 @@ menu {
 	.overlay {
 		display: none;
 	}
+
+	.features-list {
+		li {
+			display: flex;
+
+			.icon {
+				margin-right: 1rem;
+				display: flex;
+				justify-content: center;
+				width: 18px;
+				height: 18px;
+			}
+		}
+	}
 }
 
 @media (max-width: 1280px) {
@@ -45,6 +59,10 @@ menu {
 				position: absolute;
 				top: 1rem;
 				right: 1rem;
+			}
+
+			.submenu {
+				padding: 1.25rem;
 			}
 		}
 	}
@@ -92,7 +110,6 @@ menu {
 			background-color: #fff;
 			box-shadow: 0 2px 20px -4px rgba(0, 0, 0, 0.4);
 			width: auto;
-			display: none;
 		}
 
 		.features {
@@ -104,16 +121,7 @@ menu {
 
 				li {
 					margin: 0;
-					display: flex;
 					padding: 0.5rem 0;
-
-					.icon {
-						margin-right: 1rem;
-						display: flex;
-						justify-content: center;
-						width: 18px;
-						height: 18px;
-					}
 				}
 			}
 		}
