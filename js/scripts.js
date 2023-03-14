@@ -14,6 +14,10 @@ const largeScreens = 1280;
 const overlay = document.querySelector(".overlay");
 const nav = document.querySelector("nav");
 
+function toggleDropdown(element, open) {
+	element.setAttribute("data-open", open);
+}
+
 function changeArrow(element, src, direction) {
 	element.setAttribute("src", src);
 	element.setAttribute("alt", `Arrow ${direction} Icon`);
@@ -41,63 +45,63 @@ overlay.addEventListener("click", (event) => {
 
 features.addEventListener("mouseover", (event) => {
 	if (window.innerWidth > largeScreens) {
-		company.classList.remove("active");
+		toggleDropdown(company, "false");
 		changeArrow(companyArrow, "./images/icon-arrow-down.svg", "Down");
 
-		features.classList.add("active");
+		toggleDropdown(features, "true");
 		changeArrow(featuresArrow, "./images/icon-arrow-up.svg", "Up");
 	}
 });
 
 featuresList.addEventListener("mouseover", (event) => {
-	features.classList.add("active");
+	toggleDropdown(features, "true");
 	changeArrow(featuresArrow, "./images/icon-arrow-up.svg", "Up");
 });
 
 featuresList.addEventListener("mouseout", (event) => {
 	if (window.innerWidth > largeScreens) {
-		features.classList.remove("active");
+		toggleDropdown(features, "false");
 		changeArrow(featuresArrow, "./images/icon-arrow-down.svg", "Down");
 	}
 });
 
 featuresLink.addEventListener("click", (event) => {
 	if (window.innerWidth <= largeScreens) {
-		features.classList.toggle("active");
-		changeArrow(featuresArrow, "./images/icon-arrow-up.svg", "Up");
-
-		if (features.classList.contains("active")) {
-			changeArrow(featuresArrow, "./images/icon-arrow-up.svg", "Up");
+		if (features.dataset.open === "true") {
+			toggleDropdown(features, "false");
+			changeArrow(featuresArrow, "./images/icon-arrow-Down.svg", "Down");
 		} else {
-			changeArrow(featuresArrow, "./images/icon-arrow-down.svg", "Down");
+			toggleDropdown(features, "true");
+			changeArrow(featuresArrow, "./images/icon-arrow-up.svg", "Up");
 		}
 	}
 });
 
 company.addEventListener("mouseover", (event) => {
 	if (window.innerWidth > largeScreens) {
-		company.classList.add("active");
-		features.classList.remove("active");
+		toggleDropdown(features, "false");
 		changeArrow(featuresArrow, "./images/icon-arrow-down.svg", "Down");
+
+		toggleDropdown(company, "true");
 		changeArrow(companyArrow, "./images/icon-arrow-up.svg", "Up");
 	}
 });
 
 companyList.addEventListener("mouseout", (event) => {
 	if (window.innerWidth > largeScreens) {
-		company.classList.remove("active");
+		toggleDropdown(company, "false");
 		changeArrow(companyArrow, "./images/icon-arrow-down.svg", "Down");
 	}
 });
 
 companyLink.addEventListener("click", (event) => {
 	if (window.innerWidth <= largeScreens) {
-		company.classList.toggle("active");
-
-		if (company.classList.contains("active")) {
-			changeArrow(companyArrow, "./images/icon-arrow-up.svg", "Up");
+		if (company.dataset.open === "true") {
+			toggleDropdown(company, "false");
+			changeArrow(companyArrow, "./images/icon-arrow-Down.svg", "Down");
 		} else {
-			changeArrow(companyArrow, "./images/icon-arrow-down.svg", "Down");
+			toggleDropdown(company, "true");
+			changeArrow(companyArrow, "./images/icon-arrow-up.svg", "Up");
 		}
 	}
 });

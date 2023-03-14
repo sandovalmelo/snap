@@ -14,7 +14,7 @@ menu {
 		}
 	}
 
-	.features.active {
+	.features[data-open="true"] {
 		.features-list {
 			display: block;
 		}
@@ -43,7 +43,7 @@ menu {
 		}
 	}
 
-	.company.active {
+	.company[data-open="true"] {
 		.company-list {
 			display: block;
 		}

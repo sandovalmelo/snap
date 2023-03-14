@@ -45,7 +45,7 @@ menu {
     display: none; }
   menu .nav-list img {
     margin-left: 0.75rem; }
-  menu .features.active .features-list {
+  menu .features[data-open="true"] .features-list {
     display: block; }
   menu .features-list {
     display: none; }
@@ -60,7 +60,7 @@ menu {
         height: 18px; }
   menu .company .company-list {
     display: none; }
-  menu .company.active .company-list {
+  menu .company[data-open="true"] .company-list {
     display: block; }
   menu a {
     color: inherit;
