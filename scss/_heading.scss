@@ -12,15 +12,17 @@
 	}
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1080px) {
 	.heading {
+		padding: 0;
 		grid-column: 1 / 2;
 		grid-row: 1 / 2;
 		text-align: left;
-		justify-self: start;
+		align-self: end;
+		max-width: 30rem;
 
 		&-title {
-			font-size: 5rem;
+			font-size: 4.5rem;
 			margin-bottom: 2rem;
 
 			span {
@@ -30,8 +32,8 @@
 
 		&-text {
 			margin-bottom: 4rem;
-			font-size: 1.15rem;
-			max-width: 480px;
+			font-size: 1rem;
+			max-width: 400px;
 		}
 	}
 

@@ -5,17 +5,13 @@
 	}
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1080px) {
 	.hero-image {
 		grid-column: 2 / -1;
 		grid-row: 1 / 2;
 
 		img {
-			width: auto;
-			max-width: 100%;
-			height: calc(100vh - 99.2px);
-			object-fit: contain;
-			object-position: center;
+			max-width: 27rem;
 		}
 	}
 }
