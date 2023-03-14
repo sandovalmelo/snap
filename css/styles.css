@@ -45,6 +45,8 @@ menu {
     display: none; }
   menu .nav-list img {
     margin-left: 0.75rem; }
+  menu .features.active .features-list {
+    display: block; }
   menu .features-list {
     display: none; }
     menu .features-list li {
@@ -56,11 +58,9 @@ menu {
         justify-content: center;
         width: 18px;
         height: 18px; }
-  menu .features-list.active {
-    display: block; }
-  menu .company-list {
+  menu .company .company-list {
     display: none; }
-  menu .company-list.active {
+  menu .company.active .company-list {
     display: block; }
   menu a {
     color: inherit;

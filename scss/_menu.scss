@@ -14,6 +14,12 @@ menu {
 		}
 	}
 
+	.features.active {
+		.features-list {
+			display: block;
+		}
+	}
+
 	.features-list {
 		display: none;
 
@@ -31,16 +37,16 @@ menu {
 		}
 	}
 
-	.features-list.active {
-		display: block;
+	.company {
+		.company-list {
+			display: none;
+		}
 	}
 
-	.company-list {
-		display: none;
-	}
-
-	.company-list.active {
-		display: block;
+	.company.active {
+		.company-list {
+			display: block;
+		}
 	}
 
 	a {
