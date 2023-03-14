@@ -174,5 +174,20 @@ menu {
 				}
 			}
 		}
+
+		.login-btn {
+			&:hover {
+				cursor: pointer;
+				color: $dark-gray;
+			}
+		}
+
+		.register-btn {
+			&:hover {
+				cursor: pointer;
+				color: $dark-gray;
+				border-color: inherit;
+			}
+		}
 	}
 }
