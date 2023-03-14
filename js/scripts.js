@@ -16,7 +16,7 @@ hamburguerMenu.addEventListener("click", (event) => {
 closeMenu.addEventListener("click", (event) => {
 	menu.setAttribute("data-open", "false");
 	main.style.height = "auto";
-	main.style.overflow = "auto";
+	main.style.overflow = "asuto";
 });
 
 features.addEventListener("click", (event) => {
