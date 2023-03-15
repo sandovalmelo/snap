@@ -44,7 +44,14 @@ menu {
   menu .overlay {
     display: none; }
   menu .nav-list img {
-    margin-left: 0.75rem; }
+    margin-left: 0.5rem;
+    width: 18px; }
+  menu .nav-list svg {
+    margin-left: 0.25rem;
+    width: 18px;
+    fill: dimgray; }
+  menu .nav-list svg.hide {
+    display: none; }
   menu .features[data-open="true"] .features-list {
     display: block; }
   menu .features-list {
@@ -58,6 +65,10 @@ menu {
         justify-content: center;
         width: 18px;
         height: 18px; }
+  menu .features-link,
+  menu .company-link {
+    display: flex;
+    align-items: center; }
   menu .company .company-list {
     display: none; }
   menu .company[data-open="true"] .company-list {
@@ -117,6 +128,10 @@ menu {
         cursor: pointer; }
     menu a:hover {
       color: #141414; }
+    menu a ~ svg {
+      fill: dimgray; }
+    menu a:hover > svg {
+      fill: #141414; }
     menu .hamburguer-menu,
     menu .close-menu {
       display: none; }

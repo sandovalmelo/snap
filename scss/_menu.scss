@@ -10,7 +10,22 @@ menu {
 
 	.nav-list {
 		img {
-			margin-left: 0.75rem;
+			margin-left: 0.5rem;
+			width: 18px;
+		}
+
+		svg {
+			margin-left: 0.25rem;
+			width: 18px;
+			fill: $medium-gray;
+		}
+
+		// svg.show {
+		// 	display: block;
+		// }
+
+		svg.hide {
+			display: none;
 		}
 	}
 
@@ -35,6 +50,12 @@ menu {
 				height: 18px;
 			}
 		}
+	}
+
+	.features-link,
+	.company-link {
+		display: flex;
+		align-items: center;
 	}
 
 	.company {
@@ -136,6 +157,14 @@ menu {
 			&:hover {
 				color: $dark-gray;
 			}
+		}
+
+		a ~ svg {
+			fill: $medium-gray;
+		}
+
+		a:hover > svg {
+			fill: $dark-gray;
 		}
 
 		.hamburguer-menu,
