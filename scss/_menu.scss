@@ -20,10 +20,6 @@ menu {
 			fill: $medium-gray;
 		}
 
-		// svg.show {
-		// 	display: block;
-		// }
-
 		svg.hide {
 			display: none;
 		}
@@ -128,6 +124,8 @@ menu {
 }
 
 @media (min-width: 1080px) {
+	$top: 46px;
+
 	menu {
 		padding: 1.5rem 3rem;
 
@@ -148,9 +146,19 @@ menu {
 			display: flex;
 
 			li {
-				margin: 0 1.5rem;
+				margin: 0 0.5rem;
+				padding: 0.75rem;
 				cursor: pointer;
 			}
+		}
+
+		li {
+			display: flex;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
 		}
 
 		a {
@@ -185,7 +193,7 @@ menu {
 			position: relative;
 
 			&-list {
-				top: 36px;
+				top: $top;
 				right: 0;
 
 				li {
@@ -199,7 +207,7 @@ menu {
 			position: relative;
 
 			&-list {
-				top: 36px;
+				top: $top;
 
 				li {
 					padding: 0.5rem;

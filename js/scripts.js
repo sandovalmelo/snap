@@ -10,12 +10,9 @@ const companyList = document.querySelector(".company-list");
 const companyLink = document.querySelector(".company-link");
 const featuresArrow = document.querySelector(".features img");
 const companyArrow = document.querySelector(".company img");
-const largeScreens = 1280;
+const largeScreens = 1080;
 const overlay = document.querySelector(".overlay");
 const nav = document.querySelector("nav");
-
-console.log(featuresLink.querySelector(".arrow-down"));
-console.log(featuresLink.querySelector(".arrow-up"));
 
 function toggleDropdown(element, open) {
 	element.setAttribute("data-open", open);
@@ -48,22 +45,15 @@ overlay.addEventListener("click", (event) => {
 
 features.addEventListener("mouseover", (event) => {
 	if (window.innerWidth > largeScreens) {
-		toggleDropdown(company, "false");
-		// changeArrow(companyArrow, "./images/icon-arrow-down.svg", "Down");
-
 		toggleDropdown(features, "true");
 		changeArrow(featuresLink, ".arrow-down", ".arrow-up");
-		console.log("foo");
 	}
 });
 
-featuresList.addEventListener("mouseover", (event) => {
-	toggleDropdown(features, "true");
-});
-
-featuresList.addEventListener("mouseout", (event) => {
+features.addEventListener("mouseout", (event) => {
 	if (window.innerWidth > largeScreens) {
 		toggleDropdown(features, "false");
+		changeArrow(featuresLink, ".arrow-up", ".arrow-down");
 	}
 });
 
@@ -71,28 +61,25 @@ featuresLink.addEventListener("click", (event) => {
 	if (window.innerWidth <= largeScreens) {
 		if (features.dataset.open === "true") {
 			toggleDropdown(features, "false");
-			// changeArrow(featuresArrow, "./images/icon-arrow-Down.svg", "Down");
+			changeArrow(featuresLink, ".arrow-up", ".arrow-down");
 		} else {
 			toggleDropdown(features, "true");
-			// changeArrow(featuresArrow, "./images/icon-arrow-up.svg", "Up");
+			changeArrow(featuresLink, ".arrow-down", ".arrow-up");
 		}
 	}
 });
 
 company.addEventListener("mouseover", (event) => {
 	if (window.innerWidth > largeScreens) {
-		toggleDropdown(features, "false");
-		// changeArrow(featuresArrow, "./images/icon-arrow-down.svg", "Down");
-
 		toggleDropdown(company, "true");
-		// changeArrow(companyArrow, "./images/icon-arrow-up.svg", "Up");
+		changeArrow(companyLink, ".arrow-down", ".arrow-up");
 	}
 });
 
-companyList.addEventListener("mouseout", (event) => {
+company.addEventListener("mouseout", (event) => {
 	if (window.innerWidth > largeScreens) {
 		toggleDropdown(company, "false");
-		// changeArrow(companyArrow, "./images/icon-arrow-down.svg", "Down");
+		changeArrow(companyLink, ".arrow-up", ".arrow-down");
 	}
 });
 
@@ -100,10 +87,10 @@ companyLink.addEventListener("click", (event) => {
 	if (window.innerWidth <= largeScreens) {
 		if (company.dataset.open === "true") {
 			toggleDropdown(company, "false");
-			// changeArrow(companyArrow, "./images/icon-arrow-Down.svg", "Down");
+			changeArrow(companyLink, ".arrow-up", ".arrow-down");
 		} else {
 			toggleDropdown(company, "true");
-			// changeArrow(companyArrow, "./images/icon-arrow-up.svg", "Up");
+			changeArrow(companyLink, ".arrow-down", ".arrow-up");
 		}
 	}
 });
